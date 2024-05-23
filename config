@@ -190,3 +190,10 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec_always --no-startup-id bash ~/.config/i3/autostart.sh
+
+# exec_always --no-startup-id i3-msg 'workspace $ws1; exec emacs-gtk+x11; workspace $ws1'
+# exec_always --no-startup-id i3-msg 'workspace $ws1; exec konsole; workspace $ws1'
+# exec_always --no-startup-id i3-msg 'workspace $ws2; exec microsoft-edge; workspace $ws1'
+# exec_always --no-startup-id i3-msg 'workspace $ws3; exec whatsapp-for-linux; workspace $ws1'
