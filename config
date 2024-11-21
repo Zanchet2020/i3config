@@ -197,6 +197,10 @@ bar {
         status_command i3status
 }
 
+exec_always xinput set-prop "ELAN1203:00 04F3:307A Touchpad" "libinput Tapping Enabled" 1
+exec_always xinput set-prop "ELAN1203:00 04F3:307A Touchpad" "libinput Natural Scrolling Enabled" 1
+
+
 exec_always --no-startup-id bash ~/.config/i3/autostart.sh
 
 # exec_always --no-startup-id i3-msg 'workspace $ws1; exec emacs-gtk+x11; workspace $ws1'
